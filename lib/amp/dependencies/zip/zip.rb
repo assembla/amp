@@ -3,7 +3,7 @@
 require 'delegate'
 require 'singleton'
 require 'tempfile'
-require 'ftools'
+RUBY_VERSION < "1.9" ? require 'ftools' : require 'fileutils'
 require 'stringio'
 require 'zlib'
 
